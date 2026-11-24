@@ -12,8 +12,6 @@ rng = np.random.default_rng()
 cols = np.arange(0, W)
 img = plt.imshow(arr, cmap=plt.cm.inferno, interpolation='nearest')
 plt.draw()
-plt.pause(0.01)
-plt.draw()
 
 for _ in range(1000):
     decay = rng.integers(0, 2, arr[1:].shape)
